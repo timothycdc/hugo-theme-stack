@@ -5,11 +5,9 @@
 {{ end }}
 
 {{ define "container-class" }}
-    {{ if (.Scratch.Get "hasTOC") }}
-        extended
-    {{ else }}
+
         on-phone--column {{ if .Site.Params.widgets.enabled }}extended{{ else }}compact{{ end }}
-    {{ end }}
+
 {{ end }}
 
 {{ define "main" }}
@@ -26,11 +24,14 @@
     {{ partialCached "article/components/photoswipe" . }}
 {{ end }}
 
+
+
 {{ define "left-sidebar" }}
     
         {{ partial "sidebar/left.html" . }}
 
 {{ end }}
+
 
 {{ define "right-sidebar" }}
     {{ if (.Scratch.Get "hasTOC") }}
