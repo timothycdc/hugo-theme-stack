@@ -26,17 +26,13 @@
     {{ partialCached "article/components/photoswipe" . }}
 {{ end }}
 
+
+
 {{ define "left-sidebar" }}
-    {{ if (.Scratch.Get "hasTOC") }}
-        <div id="article-toolbar">
-            <a href="{{ .Site.BaseURL }}" class="back-home">
-                {{ (resources.Get "icons/back.svg").Content | safeHTML }}
-                <span>{{ T "article.back" }}</span>
-            </a>
-        </div>
-    {{ else }}
+ 
+
         {{ partial "sidebar/left.html" . }}
-    {{ end }}
+ 
 {{ end }}
 
 {{ define "right-sidebar" }}

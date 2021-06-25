@@ -1,0 +1,17 @@
+<style>
+     :root {
+        --article-font-family: "Inter", var(--base-font-family);
+    }
+</style>
+
+<script>
+    (function() {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;800&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
