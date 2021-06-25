@@ -2,10 +2,9 @@
     {{ if .Params.categories }}
     <header class="article-category">
         {{ range (.GetTerms "categories") }}
-            <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
+        <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};" {{ end }}>
                 {{ .LinkTitle }}
-            </a>
-        {{ end }}
+            </a> {{ end }}
     </header>
     {{ end }}
 
@@ -19,13 +18,14 @@
     <h3 class="article-subtitle">
         {{ . }}
     </h3>
-    {{ end }}
-
-    {{- if not .Date.IsZero -}}
+    {{ end }} {{- if not .Date.IsZero -}}
     <footer class="article-time">
-        {{ partial "helper/icon" "clock" }}
+        {{ partial "helper/icon" "date" }}
         <time class="article-time--published">
-            {{- .Date.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}
+            {{- .Date.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}&emsp;
+        </time> {{ partial "helper/icon" "clock" }}
+        <time class="article-time--published">
+            {{ .ReadingTime }} min read
         </time>
     </footer>
     {{- end -}}

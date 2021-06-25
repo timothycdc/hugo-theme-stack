@@ -24,7 +24,7 @@ article:
         other: Table of contents
 
     relatedContents:
-        other: Related contents
+        other: Related content
 
     lastUpdatedOn:
         other: Last updated on
@@ -52,7 +52,7 @@ search:
         other: Search
 
     placeholder:
-        other: Type something...
+        other: Type a query...
 
     resultTitle:
         other: "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
@@ -62,4 +62,8 @@ footer:
         other: Built with {{ .Generator }}
 
     designedBy:
-        other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
+        other: Theme is a fork – original design by {{ .DesignedBy }}
+
+
+
+
