@@ -1,11 +1,11 @@
-baseurl: https://example.com
+baseurl: https://tchungblog2.netlify.app
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
 title: Timo's Blog
 
 # Change it to your Disqus shortname before using
-disqusShortname: 
+disqusShortname: hugo-theme-stack
 
 # GA Tracking ID
 googleAnalytics:
@@ -27,7 +27,7 @@ params:
 
     footer:
         since: 2020
-        customText: Meow
+        customText:
 
     dateFormat:
         published: Jan 02, 2006
@@ -35,7 +35,7 @@ params:
 
     sidebar:
         emoji: 🇲🇾
-        subtitle: Hi!digjrwapihjeoirthjoietgjoirwogjioj
+        subtitle: Hi!
         avatar:
             local: true
             src: img/avatar.jpg
@@ -44,7 +44,7 @@ params:
         math: true
         toc: true
         license:
-            enabled: false
+            enabled: true
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
@@ -91,10 +91,10 @@ params:
             - tag-cloud
 
         archives:
-            limit: 5
+            limit: 7
 
         tagCloud:
-            limit: 10
+            limit: 11
 
     opengraph:
         twitter:
