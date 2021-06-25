@@ -17,14 +17,20 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 /* scrollbar styles for Firefox */
+
 * {
     scrollbar-width: auto;
     scrollbar-color: var(--scrollbar-thumb) transparent;
 }
+
+
 /**/
 
+
 /* scrollbar styles for Chromium */
+
 ::-webkit-scrollbar {
     height: auto;
 }
@@ -36,4 +42,6 @@ body {
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
+
+
 /**/
