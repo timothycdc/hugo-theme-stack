@@ -9,9 +9,7 @@
 @import "breakpoints.scss";
 @import "variables.scss";
 @import "grid.scss";
-
 @import "external/normalize.scss";
-
 @import "partials/menu.scss";
 @import "partials/article.scss";
 @import "partials/widgets.scss";
@@ -24,21 +22,16 @@
 @import "partials/layout/list.scss";
 @import "partials/layout/404.scss";
 @import "partials/layout/search.scss";
-
 @import "custom.scss";
-
 a {
     text-decoration: none;
     color: var(--accent-color);
-
     &:hover {
         color: var(--accent-color-darker);
     }
-
     &.link {
         box-shadow: 0px -2px 0px rgba(var(--link-background-color), var(--link-background-opacity)) inset;
         transition: all 0.3s ease;
-
         &:hover {
             box-shadow: 0px -10px 0px rgba(var(--link-background-color), var(--link-background-opacity-hover)) inset;
         }
@@ -53,7 +46,6 @@ a {
     font-size: 1.6rem;
     font-weight: bold;
     color: var(--body-text-color);
-
     a {
         color: var(--body-text-color);
     }

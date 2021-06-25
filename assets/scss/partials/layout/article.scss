@@ -128,19 +128,6 @@
             }
         }
     }
-    .main-container {
-        align-items: start;
-        flex-direction: column;
-        @include respond(xl) {
-            flex-direction: row;
-        }
-    }
-    .main {
-        padding-top: 0;
-        @include respond(xl) {
-            padding-top: var(--main-top-padding);
-        }
-    }
 }
 
 .widget--toc {
