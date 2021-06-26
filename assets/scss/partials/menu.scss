@@ -139,10 +139,10 @@
     margin-bottom: 0;
     overflow-y: auto;
     flex-grow: 1;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background-color: var(--card-background);
     margin-top: 0;
-    padding: 15px 0;
+    padding: 10px 0;
     box-shadow: var(--shadow-l1);
     display: none;
     &.show {
@@ -162,7 +162,7 @@
     li {
         position: relative;
         vertical-align: middle;
-        padding: 10px 30px;
+        padding: 10px 20px;
         &:not(:last-of-type) {
             margin-bottom: 15px;
             @include respond(xl) {
@@ -176,8 +176,8 @@
         svg {
             stroke-width: 1.6;
             margin-right: 30px;
-            width: 30px;
-            height: 30px;
+            width: 26px;
+            height: 26px;
         }
         a {
             height: 100%;

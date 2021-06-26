@@ -71,7 +71,7 @@
             right: 0;
             text-align: center;
             font-size: 20px;
-            background-color: var(--card-background);
+            background-color: var(--timo-accent);
             box-shadow: var(--shadow-l2);
             @include respond(2xl) {
                 width: 50px;
@@ -92,8 +92,8 @@
         color: var(--body-text-color);
         font-weight: normal;
         margin: 10px 0;
-        font-size: 1.6rem;
-        line-height: 2rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
         @include respond(2xl) {
             font-size: 1.8rem;
         }
