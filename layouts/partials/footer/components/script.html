@@ -1,6 +1,29 @@
-{{- partial "helper/external" (dict "Context" . "Namespace" "Vibrant") -}}
-
-{{- $opts := dict "minify" hugo.IsProduction -}}
-{{- $script := resources.Get "ts/main.ts" | js.Build $opts -}}
+{{- partial "helper/external" (dict "Context" . "Namespace" "Vibrant") -}} {{- $opts := dict "minify" hugo.IsProduction -}} {{- $script := resources.Get "ts/main.ts" | js.Build $opts -}}
 
 <script type="text/javascript" src="{{ $script.RelPermalink }}" defer></script>
+<script>
+    var x = document.getElementById('back-up');
+    var div = document.getElementsByTagName('main')[0];
+
+    function checkScroll() {
+        if (window.innerWidth <= 768) {
+            var div = document.getElementsByTagName('html')[0];
+            if (div.scrollHeight <= screen.height) {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } else {
+            var div = document.getElementsByTagName('main')[0];
+            if (div.scrollHeight <= screen.height) {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+
+    }
+    checkScroll()
+    window.addEventListener("resize", checkScroll);
+</script>
