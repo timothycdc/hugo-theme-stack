@@ -2,6 +2,6 @@
 title: "{{ replace .Name "-" " " | title }}"
 image: 
 style:
-    background: "#2a9d8f"
+    background: 
     color: "#fff"
 ---

@@ -1,5 +1,7 @@
 {{- $ThemeVersion := "2.4.0" -}}
 <footer class="site-footer">
+
+    <section class='footer-left'>
     <section class="copyright">
         &copy; 
         {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
@@ -21,4 +23,16 @@
         {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}<br />
 
     </section>
+    </section>
+
+
+<section class='footer-right'>
+    <a href="#top" class="back-up">
+                {{ (resources.Get "icons/up.svg").Content | safeHTML }}
+
+            </a>
+</section>
+
 </footer>
+
+

@@ -1,9 +1,19 @@
-$defaultTagBackgrounds: #8ea885,
-#df7988,
-#0177b8,
-#ffb900,
-#6b69d6;
+$defaultTagBackgrounds: #5784BA,
+#F9968B,
+#E7CBA9,
+#EB96AA,
+#A1CDCE,
+#beb4c5,
+#e6a57E,
+#436fff,
+#C54B6C,
+#C47482;
 $defaultTagColors: #fff,
+#fff,
+#fff,
+#fff,
+#fff,
+#fff,
 #fff,
 #fff,
 #fff,
@@ -32,6 +42,7 @@ $defaultTagColors: #fff,
     @include respond(xl) {
         --main-top-padding: 50px;
     }
+    --timo-accent: #3b77f7;
     --body-background: #f5f5fa;
     --accent-color: #34495e;
     --accent-color-darker: #2c3e50;
@@ -42,12 +53,12 @@ $defaultTagColors: #fff,
     --scrollbar-thumb: hsl(0, 0%, 85%);
     --scrollbar-track: var(--body-background);
     &[data-scheme="dark"] {
-        --body-background: #303030;
+        --body-background: #2a3150;
         --accent-color: #ecf0f1;
         --accent-color-darker: #bdc3c7;
         --accent-color-text: #000;
         --body-text-color: rgba(255, 255, 255, 0.7);
-        --scrollbar-thumb: #424242;
+        --scrollbar-thumb: #353d61;
         --scrollbar-track: var(--body-background);
     }
 }
@@ -89,7 +100,7 @@ $defaultTagColors: #fff,
         --small-card-padding: 25px;
     }
     &[data-scheme="dark"] {
-        --card-background: #424242;
+        --card-background: #353d61;
         --card-background-selected: rgba(255, 255, 255, 0.16);
         --card-text-color-main: rgba(255, 255, 255, 0.9);
         --card-text-color-secondary: rgba(255, 255, 255, 0.7);
@@ -134,8 +145,8 @@ $defaultTagColors: #fff,
         --code-background-color: #272822;
         --code-text-color: rgba(255, 255, 255, 0.9);
         --table-border-color: #717171;
-        --tr-even-background-color: #545454;
-        --blockquote-background-color: rgb(75 75 75);
+        --tr-even-background-color: #2a3150;
+        --blockquote-background-color: #40486e;
     }
 }
 
