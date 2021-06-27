@@ -89,11 +89,15 @@ params:
             - search
             - archives
             - tag-cloud
+            - categories-cloud
 
         archives:
             limit: 5
 
         tagCloud:
+            limit: 10
+
+        categoriesCloud:
             limit: 10
 
     opengraph:

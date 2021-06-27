@@ -84,9 +84,9 @@ main.main {
 .main-container {
     min-height: 100vh;
     align-items: flex-start;
-    padding: 0 15px;
+    padding: 0 20px;
     column-gap: var(--section-separation);
     @include respond(md) {
-        padding: 0 20px;
+        padding: 0 30px;
     }
 }
