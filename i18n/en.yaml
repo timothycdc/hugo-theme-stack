@@ -66,7 +66,7 @@ footer:
         other: Built with {{ .Generator }}
 
     designedBy:
-        other: Theme is a fork – original design by {{ .DesignedBy }}
+        other: Forked {{.Theme}} – original design by {{ .DesignedBy }}
 
 
 
