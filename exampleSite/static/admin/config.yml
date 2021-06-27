@@ -9,9 +9,9 @@ public_folder: "/uploads" # The src attribute for uploaded media will begin with
 collections:
   - name: "blog"
     label: "blogpost"
-    folder: "content/post"
+    folder: "content/{{slug}}"
     create: True
-    slug: "{{slug}}"
+    slug: "index.md"
 
     fields: # The fields for each document, usually in front matter
         - {label: "Author", name: "author", widget: "string"}
