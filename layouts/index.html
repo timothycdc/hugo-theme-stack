@@ -1,21 +1,31 @@
-{{ define "main" }} {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }} {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }} {{ $filtered := ($pages | intersect $notHidden) }} {{ $pag := .Paginate ($filtered)
-}}
+{{ define "main" }}
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+    {{ $filtered := ($pages | intersect $notHidden) }}
+    {{ $pag := .Paginate ($filtered) }}
 
-<section class="article-list">
-    {{ range $index, $element := $pag.Pages }} {{ partial "article-list/default" . }} {{ end }}
-</section>
+    <section class="article-list">
+        {{ range $index, $element := $pag.Pages }}
+            {{ partial "article-list/default" . }}
+        {{ end }}
+    </section>
 
 
-{{- partial "pagination.html" . -}}
-<script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
+    {{- partial "pagination.html" . -}}
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
             if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                });
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
             }
-        });
-    }
-</script>
-{{- partial "footer/footer" . -}} {{ end }} {{ define "right-sidebar" }} {{ partial "sidebar/right.html" . }} {{ end }}
+          });
+        }
+      </script>
+    {{- partial "footer/footer" . -}}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" . }}
+{{ end }}
