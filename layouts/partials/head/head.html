@@ -3,6 +3,7 @@
 
 {{- $description := partialCached "data/description" . .RelPermalink -}}
 <meta name='description' content='{{ $description }}'>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 {{- $title := partialCached "data/title" . .RelPermalink -}}
 <title>{{ $title }}</title>
