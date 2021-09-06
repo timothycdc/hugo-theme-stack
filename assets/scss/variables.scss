@@ -1,23 +1,19 @@
-$defaultTagBackgrounds: #5784BA,
-#F9968B,
-#E7CBA9,
-#EB96AA,
-#A1CDCE,
-#beb4c5,
-#e6a57E,
-#436fff,
-#C54B6C,
-#C47482;
-$defaultTagColors: #fff,
-#fff,
-#fff,
-#fff,
-#fff,
-#fff,
-#fff,
-#fff,
-#fff,
-#fff;
+$defaultTagBackgrounds: #f892a1;
+
+// #5784BA,
+// #F9968B,
+// #E7CBA9,
+// #EB96AA,
+// #A1CDCE,
+// #beb4c5,
+// #e6a57E,
+// #436fff,
+// #C54B6C,
+// #C47482;
+$defaultTagColors: #20243a;
+
+
+
 [data-scheme="light"] {
     --pre-text-color: #272822;
     --pre-background-color: #fafafa;
@@ -42,23 +38,23 @@ $defaultTagColors: #fff,
     @include respond(xl) {
         --main-top-padding: 50px;
     }
-    --timo-accent: #3b77f7;
-    --body-background: #f5f5fa;
+    --timo-accent: #f892a1;
+    --body-background: #f9f9f7;
     --accent-color: #34495e;
-    --accent-color-darker: #2c3e50;
+    --accent-color-darker: #20243a;
     --accent-color-text: #fff;
-    --body-text-color: #7e7d7d;
+    --body-text-color: #5c5a5a;
     --tag-border-radius: 4px;
     --section-separation: 40px;
     --scrollbar-thumb: hsl(0, 0%, 85%);
     --scrollbar-track: var(--body-background);
     &[data-scheme="dark"] {
-        --body-background: #2a3150;
+        --body-background: #20243a;
         --accent-color: #ecf0f1;
         --accent-color-darker: #bdc3c7;
         --accent-color-text: #000;
         --body-text-color: rgba(255, 255, 255, 0.7);
-        --scrollbar-thumb: #474e6f;
+        --scrollbar-thumb: #2a3150;
         --scrollbar-track: var(--body-background);
     }
     /**
@@ -101,7 +97,7 @@ $defaultTagColors: #fff,
             --code-background-color: #272822;
             --code-text-color: rgba(255, 255, 255, 0.9);
             --table-border-color: #717171;
-            --tr-even-background-color: #2a3150;
+            --tr-even-background-color: #2a304e;
             --blockquote-background-color: #40486e;
         }
     }
@@ -137,7 +133,7 @@ $defaultTagColors: #fff,
 */
 
 :root {
-    --card-background: #fff;
+    --card-background: #fffffc;
     --card-background-selected: #eaeaea;
     --card-text-color-main: #000;
     --card-text-color-secondary: #747474;
@@ -156,7 +152,7 @@ $defaultTagColors: #fff,
         --small-card-padding: 25px;
     }
     &[data-scheme="dark"] {
-        --card-background: #323a5c;
+        --card-background: #2a304e;
         --card-background-selected: rgba(255, 255, 255, 0.16);
         --card-text-color-main: rgba(255, 255, 255, 0.9);
         --card-text-color-secondary: rgba(255, 255, 255, 0.7);
@@ -201,7 +197,7 @@ $defaultTagColors: #fff,
         --code-background-color: #272822;
         --code-text-color: rgba(255, 255, 255, 0.9);
         --table-border-color: #717171;
-        --tr-even-background-color: #2a3150;
+        --tr-even-background-color: #20243a;
         --blockquote-background-color: #40486e;
     }
 }
