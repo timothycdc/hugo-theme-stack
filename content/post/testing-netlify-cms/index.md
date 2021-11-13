@@ -9,5 +9,6 @@ tags:
 categories: [reference, hello]
 image: bg-cms-test.jpg
 math: true
+draft: true
 ---
 Warghhhh

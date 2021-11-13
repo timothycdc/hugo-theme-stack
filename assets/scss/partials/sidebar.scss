@@ -95,7 +95,8 @@
         font-size: 1.4rem;
         line-height: 1.8rem;
         @include respond(2xl) {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
         }
     }
 }
