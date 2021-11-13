@@ -3,7 +3,7 @@ author = "Hugo Authors"
 title = "Hello world!"
 date = "2021-06-27"
 slug = "welcome-test-page"
-description = "This article is pretty much saying hello and testing out all the formatting uwu "
+description = "This article is pretty much saying hello and testing out all the formatting "
 tags = [
     "welcome"
 ]
